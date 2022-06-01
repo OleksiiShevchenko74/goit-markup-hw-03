@@ -25,7 +25,9 @@
 /* основной цвет фона #FFFFFF */
 /* цвет контактов футера rgba(255, 255, 255, 0.6) */
 
-/* --------СТИЛИ ДЛЯ index.html--------- */
+
+/* ------------СТИЛИ ДЛЯ index.html------------ */
+
 
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -52,6 +54,17 @@ body {
     outline: 2px solid tomato;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .list {
     list-style: none;
 }
@@ -60,9 +73,15 @@ body {
     text-decoration: none;
 }
 
-/* ----------------СТУДИЯ--------------- */
+.pointer {
+    cursor: pointer;
+}
 
-/* ---------------HEADER---------------- */
+
+/* -----------------СТУДИЯ----------------- */
+
+
+/* -----------------HEADER------------------ */
 
 .header {
     background-color: var(--primary-bg-color);
@@ -151,9 +170,9 @@ body {
     color: var(--accent-color);
 }
 
-/* -----------------HERO----------------- */
+/* -------------------HERO------------------ */
 
-.hero .container {
+.hero {
     background-color: var(--secondary-bg-color);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -168,8 +187,8 @@ body {
         text-transform: uppercase;
         color: var(--white-color);
         max-width: 696px;
+        margin: 0 auto;
         margin-bottom: 30px;
-        text-align: center;
 }
 
 .hero-btn {
@@ -178,31 +197,18 @@ body {
         font-weight: 700;
         line-height: 1.88;
         display: inline-block;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.06em;
         color: var(--white-color);
         background-color: var(--accent-color);
-        margin: 0 auto;
         border-radius: 4px;
         padding: 10px 32px;
         border: 1px solid transparent;
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-    color: var(--primary-text-color)
-}
-
-.pointer {
-    cursor: pointer;
 }
 
 /* ---------------FEATURES---------------- */
 
 .features {
     background-color: var(--primary-bg-color);
-    padding-top: 94px;
 }
 
 .features-subtitle {
@@ -227,12 +233,11 @@ body {
     max-width: 270px;
 }
 
-/* -----------------WORK---------------- */
+/* -------------------WORK------------------ */
 
 .work {
     background-color: var(--primary-bg-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .work-title {
@@ -251,12 +256,10 @@ body {
     margin-right: 30px;
 }
 
-/* ------------------TEAM----------------- */
+/* --------------------TEAM------------------- */
 
-.team .container {
+.team {
     background-color: var(--tertiary-bg-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team-title {
@@ -276,12 +279,10 @@ body {
 }
 
 .team-item {
+    background-color: var(--primary-bg-color);
     width: calc(100% / 4 - 30px);
-}
-
-.name-master {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    border: var(--title-text-color);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-subtitle {
@@ -291,6 +292,9 @@ body {
         text-align: center;
         color: var(--primary-text-color);
         background-color: var(--primary-bg-color);
+
+        padding-top: 30px;
+        padding-bottom: 10px;
 }
 
 .team-text {
@@ -299,19 +303,21 @@ body {
         text-align: center;
         color: var(--title-text-color);
         background-color: var(--primary-bg-color);
+
+        padding-bottom: 30px;
 }
 
-/* ---------------FOOTER------------- */
+/* -----------------FOOTER--------------- */
 
-.footer .container {
+.footer {
     background-color: var(--secondary-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer-logo {
-    margin-bottom: 20px;
     display: block;
+    margin-bottom: 20px;
 }
 
 .footer-location {
@@ -326,11 +332,11 @@ body {
         color: var(--footer-contact-color)
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-/* ---------------ПОРТФОЛИО-------------- */
+/* -----------------ПОРТФОЛИО--------------- */
 
 .portfolio {
     background-color: var(--primary-bg-color);
